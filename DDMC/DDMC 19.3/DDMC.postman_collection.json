@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "1aa29f60-0765-40a0-a345-c2a3d442be50",
+		"_postman_id": "4dd34eb2-6cb6-45fe-8a9c-a9c5d02c527e",
 		"name": "DDMC",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -14,7 +14,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cd380cb2-e5ea-4945-9b8d-63807d54dfe4",
+								"id": "8ba04f6a-0613-4de2-b8bb-e1d6ca5f7351",
 								"exec": [
 									"tests[\"response code is 201\"] = responseCode.code === 201;\r",
 									"\r",
@@ -102,7 +102,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "649a602f-ecda-4d63-952e-b4a4ea4db543",
+						"id": "f088f3fa-733f-4811-bb8f-e83f4a77038f",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -112,7 +112,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d22f57d5-3f4c-4079-8bde-78cfac7b9f7f",
+						"id": "ea1ec345-7183-4baf-bb82-f28a97267a38",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -134,7 +134,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "d2bb558e-60ef-4d23-b0b0-931274db7119",
+										"id": "153dc582-5ba6-480b-8ca4-48a959d0f102",
 										"exec": [
 											"tests[\"response code is 201\"] = responseCode.code === 201;\r",
 											"\r",
@@ -1207,7 +1207,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"name\":\"admin-option-access\",\"hostname\":\"bdff321f54fbbc8%3Aab8f234bce6040dd\",\r\n  \"features\":[\"adminaccess:ssh\"\r\n  ], \r\n  \"description\":\"test template\"\r\n}\r\n\r\n\r\n\r\n            ",
+									"raw": "{\"name\":\"adminaccess-ssh\",\"hostname\":\"bdff321f54fbbc8:ab8f234bce6040dd\",\r\n \"features\":[\"adminaccess:ssh\"\r\n  ], \r\n  \"description\":\"test template\"\r\n}",
 									"options": {
 										"raw": {}
 									}
