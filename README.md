@@ -36,6 +36,8 @@ There are ReST API commands for NetWorker, Avamar, DataDomain and more will foll
         * environment variables
         * ReSt api automation collection
   * DataDomain Management Center
+  		 * DDMC 7.3 - Rest
+  		 	* environment var & postman collection  
 * PowerProtect
     * PowerProtect 19.1
       * environment variables
