@@ -1,4 +1,4 @@
-# DDMC 19.3 - RestAI
+# DDMC 7.3 - RestAI
 Here I have posted RestAPI for the configuration template usage with DDMC 19.3 and DDs. the attached pdf does show how GUI and commandline with alls add valuable ways to create and use thi feature
 
 # Content
