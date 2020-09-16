@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b719b380-32b1-4465-98b9-2f7e07ce5734",
+		"_postman_id": "464f1b14-099d-4b76-9e53-1e83ec840eec",
 		"name": "DDMC",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -14,7 +14,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "b172c626-9164-48e2-9455-1d27bc30d868",
+								"id": "b7a5ec43-ef21-4c22-aca1-3bb4b6151892",
 								"exec": [
 									"tests[\"response code is 201\"] = responseCode.code === 201;\r",
 									"\r",
@@ -102,7 +102,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "e7988b23-1fe7-4e41-96d0-7cdc5136cfb9",
+						"id": "9ac2f639-a128-4a75-8f1e-b05b544ce47d",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -112,7 +112,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "188d69a6-a26b-4795-aa1d-fdcb2d053f53",
+						"id": "92f73297-3146-4845-a879-b385c0fcab92",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -895,7 +895,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "267b27f1-c2f5-4e0c-88f6-6d6b88794685",
+										"id": "36e78048-3ea0-4155-9ea0-2c416f65916b",
 										"exec": [
 											"tests[\"response code is 201\"] = responseCode.code === 201;\r",
 											"\r",
@@ -2277,6 +2277,12 @@
 					"_postman_isSubFolder": true
 				},
 				{
+					"name": "upgrade schedules",
+					"item": [],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
 					"name": "Profile Access Info",
 					"item": [
 						{
@@ -2305,6 +2311,44 @@
 									]
 								},
 								"description": "Get all profiles on a PowerProtect DD system"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "System Space",
+					"item": [
+						{
+							"name": "Get system space stats",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-dd-auth-token",
+										"value": "{{X-DD-AUTH-TOKEN}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{DDMC}}:3009/rest/v2.0/dd-systems/{{System-ID}}/systems/stats/space",
+									"protocol": "https",
+									"host": [
+										"{{DDMC}}"
+									],
+									"port": "3009",
+									"path": [
+										"rest",
+										"v2.0",
+										"dd-systems",
+										"{{System-ID}}",
+										"systems",
+										"stats",
+										"space"
+									]
+								},
+								"description": "Get system space stats"
 							},
 							"response": []
 						}
@@ -2370,6 +2414,113 @@
 									]
 								},
 								"description": "Get tasks information."
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Appliance Pool",
+					"item": [],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "services",
+					"item": [
+						{
+							"name": "Get system services",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-dd-auth-token",
+										"value": "{{X-DD-AUTH-TOKEN}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{DDMC}}:3009/rest/v2.0/dd-systems/{{SYSTEM-ID}}/services",
+									"protocol": "https",
+									"host": [
+										"{{DDMC}}"
+									],
+									"port": "3009",
+									"path": [
+										"rest",
+										"v2.0",
+										"dd-systems",
+										"{{SYSTEM-ID}}",
+										"services"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ddbost",
+					"item": [
+						{
+							"name": "Get ddboost clients",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-dd-auth-token",
+										"value": "{{X-DD-AUTH-TOKEN}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{DDMC}}:3009/rest/v1.0/dd-systems/{{SYSTEM-ID}}/protocols/ddboost/clients",
+									"protocol": "https",
+									"host": [
+										"{{DDMC}}"
+									],
+									"port": "3009",
+									"path": [
+										"rest",
+										"v1.0",
+										"dd-systems",
+										"{{SYSTEM-ID}}",
+										"protocols",
+										"ddboost",
+										"clients"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get ddboost config",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-dd-auth-token",
+										"value": "{{X-DD-AUTH-TOKEN}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{DDMC}}:3009/rest/v1.0/dd-systems/{{SYSTEM-ID}}/protocols/ddboost",
+									"protocol": "https",
+									"host": [
+										"{{DDMC}}"
+									],
+									"port": "3009",
+									"path": [
+										"rest",
+										"v1.0",
+										"dd-systems",
+										"{{SYSTEM-ID}}",
+										"protocols",
+										"ddboost"
+									]
+								}
 							},
 							"response": []
 						}
