@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "464f1b14-099d-4b76-9e53-1e83ec840eec",
+		"_postman_id": "5b894380-6e91-49ff-b554-ae3917198253",
 		"name": "DDMC",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -14,7 +14,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "b7a5ec43-ef21-4c22-aca1-3bb4b6151892",
+								"id": "bf08d054-2927-4e89-91b9-8bd6492c27fe",
 								"exec": [
 									"tests[\"response code is 201\"] = responseCode.code === 201;\r",
 									"\r",
@@ -41,10 +41,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"username\":\"sysadmin\", \"password\":\"Password123!\"}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\"username\":\"sysadmin\", \"password\":\"Password123!\"}"
 						},
 						"url": {
 							"raw": "https://{{DDMC}}:3009/rest/v1.0/auth",
@@ -102,7 +99,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "9ac2f639-a128-4a75-8f1e-b05b544ce47d",
+						"id": "7968d5a9-4bf4-4de4-a84f-f9b9f2ee2360",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -112,7 +109,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "92f73297-3146-4845-a879-b385c0fcab92",
+						"id": "18121401-47e3-479a-bd5f-f19441e60c9b",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -147,10 +144,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\"name\":\"admin-access\",\"hostname\":\"bdff321f54fbbc8:ab8f234bce6040dd\",\"features\": [\r\n\"adminaccess\", \"ntp\",\"config\",\"net\" ],\"description\":\"test template\"}\r\n\r\n\r\n\r\n            ",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\"name\":\"admin-access\",\"hostname\":\"bdff321f54fbbc8:ab8f234bce6040dd\",\"features\": [\r\n\"adminaccess\", \"ntp\",\"config\",\"net\" ],\"description\":\"test template\"}\r\n\r\n\r\n\r\n            "
 										},
 										"url": {
 											"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates",
@@ -187,10 +181,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\"name\":\"adminaccess-ssh\",\"hostname\":\"bdff321f54fbbc8:ab8f234bce6040dd\",\r\n \"features\":[\"adminaccess:ssh\"\r\n  ], \r\n  \"description\":\"I am only interested in the ssh config which I took into this template\"\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\"name\":\"adminaccess-ssh\",\"hostname\":\"bdff321f54fbbc8:ab8f234bce6040dd\",\r\n \"features\":[\"adminaccess:ssh\"\r\n  ], \r\n  \"description\":\"I am only interested in the ssh config which I took into this template\"\r\n}"
 										},
 										"url": {
 											"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates",
@@ -364,10 +355,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\"systemIds\":[\"cf11b1cda3b9e3ed:94740adcaa114eee\"]}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\"systemIds\":[\"cf11b1cda3b9e3ed:94740adcaa114eee\"]}"
 										},
 										"url": {
 											"raw": "https://{{DDMC}}:3009/api/v1/system/config/templates/{{template-ID}}/apply",
@@ -895,7 +883,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "36e78048-3ea0-4155-9ea0-2c416f65916b",
+										"id": "854f0702-f3df-433f-bfa4-93ef622b47ae",
 										"exec": [
 											"tests[\"response code is 201\"] = responseCode.code === 201;\r",
 											"\r",
@@ -922,10 +910,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"username\":\"sysadmin\", \"password\":\"Password123!\"}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\"username\":\"sysadmin\", \"password\":\"Password123!\"}"
 								},
 								"url": {
 									"raw": "https://{{DDMC}}:3009/rest/v1.0/auth",
@@ -1033,10 +1018,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"name\":\"ddboost\",\"hostname\":\"ddve-1.vlab.local\",\"features\": [\r\n    \"ALL\"\r\n     ],\r\n     \"description\":\"test template\"}          ",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\"name\":\"ALL-ddve-1\",\"hostname\":\"ddve-1.vlab.local\",\"features\": [\r\n    \"ALL\"\r\n     ],\r\n     \"description\":\"Config template comming from Rest api\"}          "
 								},
 								"url": {
 									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates",
@@ -1073,10 +1055,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"name\":\"ddboost\",\"hostname\":\"ddve-1.vlab.local\",\"features\": [\r\n    \"support\"\r\n     ],\r\n     \"description\":\"test template\"}          ",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\"name\":\"support-only\",\"hostname\":\"ddve-1.vlab.local\",\"features\": [\r\n    \"support\"\r\n     ],\r\n     \"description\":\"Config template comming from Rest api\"}          "
 								},
 								"url": {
 									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates",
@@ -1113,10 +1092,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"name\":\"adminaccess-ssh\",\"hostname\":\"bdff321f54fbbc8:ab8f234bce6040dd\",\r\n \"features\":[\"adminaccess:ssh\"\r\n  ], \r\n  \"description\":\"test template\"\r\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\"name\":\"adminaccess-ssh\",\"hostname\":\"bdff321f54fbbc8:ab8f234bce6040dd\",\r\n \"features\":[\"adminaccess:ssh\"\r\n  ], \r\n  \"description\":\"Config template comming from Rest api\"\r\n}"
 								},
 								"url": {
 									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates",
@@ -1347,10 +1323,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"systemIds\":[\"cf11b1cda3b9e3ed%3A94740adcaa114eee\"]}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\"systemIds\":[\"cf11b1cda3b9e3ed%3A94740adcaa114eee\"]}"
 								},
 								"url": {
 									"raw": "https://{{DDMC}}:3009/api/v1/system/config/templates/admin-option-access/apply",
@@ -1561,10 +1534,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"name\":\"Test Fed Site\",\"description\":\"created Test federation site\"}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\"name\":\"Test Fed Site\",\"description\":\"created Test federation site\"}"
 								},
 								"url": {
 									"raw": "https://{{DDMC}}:3009/api/v1/sites",
@@ -1863,10 +1833,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{ \"configTemplateAuditScheduleCreate\":{ \"systemIds\":[ \"46eeddc94cdc5fdb:9438526d6e29d1f3\" ], \"configTemplateId\":\"newt\", \"scheduleFrequency\":\"DAILY\", \"scheduleName\":\"test_sche\" } }",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{ \"configTemplateAuditScheduleCreate\":{ \"systemIds\":[ \"46eeddc94cdc5fdb:9438526d6e29d1f3\" ], \"configTemplateId\":\"newt\", \"scheduleFrequency\":\"DAILY\", \"scheduleName\":\"test_sche\" } }"
 								},
 								"url": {
 									"raw": "https://10.213.217.8:3009/api/v1/system/config/template-audits/schedules",
@@ -1998,10 +1965,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"name\":\"admin-access\",\"hostname\":\"bdff321f54fbbc8%3Aab8f234bce6040dd\",\"features\": [\r\n\"adminaccess\", \"ntp\",\"config\",\"net\" ],\"description\":\"test template\"}\r\n\r\n\r\n\r\n            ",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\"name\":\"admin-access\",\"hostname\":\"bdff321f54fbbc8%3Aab8f234bce6040dd\",\"features\": [\r\n\"adminaccess\", \"ntp\",\"config\",\"net\" ],\"description\":\"test template\"}\r\n\r\n\r\n\r\n            "
 								},
 								"url": {
 									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates",
@@ -2038,10 +2002,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"name\":\"adminaccess-ssh\",\"hostname\":\"bdff321f54fbbc8:ab8f234bce6040dd\",\r\n \"features\":[\"adminaccess:ssh\"\r\n  ], \r\n  \"description\":\"test template\"\r\n}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\"name\":\"adminaccess-ssh\",\"hostname\":\"bdff321f54fbbc8:ab8f234bce6040dd\",\r\n \"features\":[\"adminaccess:ssh\"\r\n  ], \r\n  \"description\":\"test template\"\r\n}"
 								},
 								"url": {
 									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates",
@@ -2246,10 +2207,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"systemIds\":[\"cf11b1cda3b9e3ed:94740adcaa114eee\"]}",
-									"options": {
-										"raw": {}
-									}
+									"raw": "{\"systemIds\":[\"cf11b1cda3b9e3ed:94740adcaa114eee\"]}"
 								},
 								"url": {
 									"raw": "https://{{DDMC}}:3009/api/v1/system/config/templates/{{template-ID}}/apply",
