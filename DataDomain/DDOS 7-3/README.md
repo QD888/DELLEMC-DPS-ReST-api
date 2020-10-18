@@ -6,6 +6,7 @@ I also have added for the DELL Democenter Session a special environment you can 
 Download the whole repository and play with all the collections and let me know what's working and what not.
 If you download individual files make sure you really downloaded the json file and not a wrapped json file which will fail during import with a wrong format error.
 
-With DDOS 6.1. you also do have a DD ReST test client you can reach @ https:/{{DD-hostname}}/api/doc/ for playing around.    
-Swagger file for general usage can be found at   
+With DDOS 6.1. you also do have a DD ReST test client you can reach @   
+https:/{{DD-hostname}}/api/doc/ for playing around.    
+Swagger file for general usage can be found @  
 https://{{DD-hostname}}/api/doc/web_api.json
