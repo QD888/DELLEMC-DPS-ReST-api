@@ -7,31 +7,14 @@ These collections are a great start to demonstrate REST API functionality of Del
 All you need is, install Postman and import the collections along with the environment variables. You can download Postman here https://www.getpostman.com/downloads/.  
 # Content
 * NetWorker  
-  * NetWorker 19.1  
-    * environment variables
-    * Authenticate against a NW Server
-  * NetWorker 18.2  
-    * environment variables
-    * Authenticate against a NW Server  
+  for different NetWorker version you do find Postman collections and environment variables to download and play around with
 * Avamar  
-  * Avamar 19.1
-    * environment variables
-    * Authenticate against an ave host  
-  * Avamar 18.2
-    * environment variables
-    * Authenticate against an ave host  
+  for different Avamar version you do find Postman collections and environment variables to download and play around with
 * DataDomain
   * DataDomain
-    * DDOS 6.2
-        * environment variables
-        * ReSt api automation collection
+    for different DD version you do find Postman collections and environment variables to download and play around with
   * DataDomain Management Center
-  		 * DDMC 7.3 - Rest
-  		 	* environment var & postman collection  
+  		 for different DDMC version you do find Postman collections and environment variables to download and play around with
 * PowerProtect
-    * PowerProtect 19.1
-      * environment variables
-      * ReSt api automation collection
-    * PowerProtect 19.5
-      * environment variables
-      * ReSt api automation collection
+		 for different PPDM version you do find Postman collections and environment variables to download and play around with
+
