@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "96e54319-8019-41ea-ad10-cbb407f20796",
+		"_postman_id": "4cb44d39-4323-45b0-937d-ea5d1adac13f",
 		"name": "DDMC",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -14,7 +14,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "7c6f61aa-855d-48ee-a889-1959b17a2082",
+								"id": "e95af83d-ef59-4adb-9f73-65f18d1aebac",
 								"exec": [
 									"tests[\"response code is 201\"] = responseCode.code === 201;\r",
 									"\r",
@@ -99,7 +99,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "6b4790ec-ca6e-4765-b9e6-ea6d30ac6748",
+						"id": "d2ec2fb7-be7f-4ea2-be69-ea5853513bcc",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -109,7 +109,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "632970b1-1e61-4de3-972b-fc5bd2d5c2e6",
+						"id": "cc9f96d3-4c3e-4d8c-825b-29b3db6bf84b",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -972,7 +972,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e9299fb8-db74-4a9b-8f19-ab784605b028",
+										"id": "eac43ec1-ecc8-496b-ac3d-3443caa47cd9",
 										"exec": [
 											"tests[\"response code is 201\"] = responseCode.code === 201;\r",
 											"\r",
@@ -1262,7 +1262,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates/{{template-ID}}",
+									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates/:template-ID",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -1274,7 +1274,7 @@
 										"system",
 										"config",
 										"templates",
-										"{{template-ID}}"
+										":template-ID"
 									],
 									"query": [
 										{
@@ -1286,6 +1286,12 @@
 											"key": "exclude_fields",
 											"value": "VAR-exclude_fields",
 											"disabled": true
+										}
+									],
+									"variable": [
+										{
+											"key": "template-ID",
+											"value": ""
 										}
 									]
 								},
@@ -1308,7 +1314,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates/admin-option-access",
+									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates/:template-ID",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -1320,7 +1326,7 @@
 										"system",
 										"config",
 										"templates",
-										"admin-option-access"
+										":template-ID"
 									],
 									"query": [
 										{
@@ -1332,6 +1338,13 @@
 											"key": "exclude_fields",
 											"value": "VAR-exclude_fields",
 											"disabled": true
+										}
+									],
+									"variable": [
+										{
+											"key": "template-ID",
+											"value": "admin-option-access",
+											"description": "special template ID/name"
 										}
 									]
 								},
@@ -1393,7 +1406,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://{{DDMC}}:3009/rest/v1.0/tasks/943747",
+									"raw": "https://{{DDMC}}:3009/rest/v1.0/tasks/:taks-id",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -1403,7 +1416,14 @@
 										"rest",
 										"v1.0",
 										"tasks",
-										"943747"
+										":taks-id"
+									],
+									"variable": [
+										{
+											"key": "taks-id",
+											"value": "943747",
+											"description": "special task ID to look at"
+										}
 									]
 								},
 								"description": "Get tasks information."
@@ -1422,7 +1442,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://{{DDMC}}:3009/api/v1/system/config/template-audits/5",
+									"raw": "https://{{DDMC}}:3009/api/v1/system/config/template-audits/:tempalte-audit-ID",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -1434,7 +1454,13 @@
 										"system",
 										"config",
 										"template-audits",
-										"5"
+										":tempalte-audit-ID"
+									],
+									"variable": [
+										{
+											"key": "tempalte-audit-ID",
+											"value": "5"
+										}
 									]
 								},
 								"description": "Get tasks information."
@@ -1460,7 +1486,7 @@
 									"raw": "{\"systemIds\":[\"cf11b1cda3b9e3ed%3A94740adcaa114eee\"]}"
 								},
 								"url": {
-									"raw": "https://{{DDMC}}:3009/api/v1/system/config/templates/admin-option-access/apply",
+									"raw": "https://{{DDMC}}:3009/api/v1/system/config/templates/:tempalte-id/apply",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -1472,8 +1498,14 @@
 										"system",
 										"config",
 										"templates",
-										"admin-option-access",
+										":tempalte-id",
 										"apply"
+									],
+									"variable": [
+										{
+											"key": "tempalte-id",
+											"value": "admin-option-access"
+										}
 									]
 								},
 								"description": "Run Config Template Apply"
@@ -1599,7 +1631,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates/adminaccess-ssh",
+									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates/:template-id",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -1611,7 +1643,13 @@
 										"system",
 										"config",
 										"templates",
-										"adminaccess-ssh"
+										":template-id"
+									],
+									"variable": [
+										{
+											"key": "template-id",
+											"value": "adminaccess-ssh"
+										}
 									]
 								},
 								"description": "Delete a Config Template."
@@ -1698,7 +1736,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://{{DDMC}}:3009/api/v1/sites/{{FED-ID}}",
+									"raw": "https://{{DDMC}}:3009/api/v1/sites/:FED-ID",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -1708,7 +1746,14 @@
 										"api",
 										"v1",
 										"sites",
-										"{{FED-ID}}"
+										":FED-ID"
+									],
+									"variable": [
+										{
+											"key": "FED-ID",
+											"value": "",
+											"description": "Federation ID"
+										}
 									]
 								},
 								"description": "Get details of a Federation Site."
@@ -1775,7 +1820,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://{{DDMC}}:3009/api/v1/system/config/template-audits/{{template-audit-ID}}",
+									"raw": "https://{{DDMC}}:3009/api/v1/system/config/template-audits/:template-audit-ID",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -1787,7 +1832,14 @@
 										"system",
 										"config",
 										"template-audits",
-										"{{template-audit-ID}}"
+										":template-audit-ID"
+									],
+									"variable": [
+										{
+											"key": "template-audit-ID",
+											"value": "<string>",
+											"description": "teplate audit ID"
+										}
 									]
 								},
 								"description": "Get a Config Template Audit Result"
@@ -1927,7 +1979,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://{{DDMC}}:3009/api/v1/system/config/template-audits/schedules/{{Template-Audit-Schedule-ID}}",
+									"raw": "https://{{DDMC}}:3009/api/v1/system/config/template-audits/schedules/:Template-Audit-Schedule-ID",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -1940,7 +1992,14 @@
 										"config",
 										"template-audits",
 										"schedules",
-										"{{Template-Audit-Schedule-ID}}"
+										":Template-Audit-Schedule-ID"
+									],
+									"variable": [
+										{
+											"key": "Template-Audit-Schedule-ID",
+											"value": "string",
+											"description": "Schedule ID of a template audit"
+										}
 									]
 								},
 								"description": "Delete Config Template Audit Schedule"
@@ -2217,7 +2276,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates/{{template-ID}}",
+									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates/:template-ID",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -2229,7 +2288,7 @@
 										"system",
 										"config",
 										"templates",
-										"{{template-ID}}"
+										":template-ID"
 									],
 									"query": [
 										{
@@ -2241,6 +2300,13 @@
 											"key": "exclude_fields",
 											"value": "VAR-exclude_fields",
 											"disabled": true
+										}
+									],
+									"variable": [
+										{
+											"key": "template-ID",
+											"value": "String",
+											"description": "template ID for the "
 										}
 									]
 								},
@@ -2272,7 +2338,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates/{{template-ID}}",
+									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates/:template-ID",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -2284,7 +2350,16 @@
 										"system",
 										"config",
 										"templates",
-										"{{template-ID}}"
+										":template-ID"
+									],
+									"variable": [
+										{
+											"key": "template-ID",
+											"value": "<String>",
+											"type": "text",
+											"enabled": true,
+											"description": " template ID"
+										}
 									]
 								},
 								"description": "Modify/Apply a Config Template."
@@ -2302,7 +2377,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates/{{template-ID}}",
+									"raw": "https://{{DDMC}}:3009/rest/v1.0/system/config/templates/:template-ID",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -2314,7 +2389,16 @@
 										"system",
 										"config",
 										"templates",
-										"{{template-ID}}"
+										":template-ID"
+									],
+									"variable": [
+										{
+											"key": "template-ID",
+											"value": "<string>",
+											"type": "text",
+											"enabled": true,
+											"description": "template id"
+										}
 									]
 								},
 								"description": "Delete a Config Template."
@@ -2389,7 +2473,7 @@
 									"raw": "{\"systemIds\":[\"cf11b1cda3b9e3ed:94740adcaa114eee\"]}"
 								},
 								"url": {
-									"raw": "https://{{DDMC}}:3009/api/v1/system/config/templates/{{template-ID}}/apply",
+									"raw": "https://{{DDMC}}:3009/api/v1/system/config/templates/:template-ID/apply",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -2401,8 +2485,15 @@
 										"system",
 										"config",
 										"templates",
-										"{{template-ID}}",
+										":template-ID",
 										"apply"
+									],
+									"variable": [
+										{
+											"key": "template-ID",
+											"value": "string",
+											"description": "this is the template ID you need to use "
+										}
 									]
 								},
 								"description": "Run Config Template Apply"
@@ -2508,7 +2599,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://{{DDMC}}:3009/rest/v1.0/tasks/939086",
+									"raw": "https://{{DDMC}}:3009/rest/v1.0/tasks/:task-id",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -2518,7 +2609,14 @@
 										"rest",
 										"v1.0",
 										"tasks",
-										"939086"
+										":task-id"
+									],
+									"variable": [
+										{
+											"key": "task-id",
+											"value": "<string>",
+											"description": "specifiy the task ID"
+										}
 									]
 								},
 								"description": "Get tasks information."
@@ -2537,7 +2635,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://{{DDMC}}:3009/rest/v1.0/tasks/939086",
+									"raw": "https://{{DDMC}}:3009/rest/v1.0/tasks/:task-id",
 									"protocol": "https",
 									"host": [
 										"{{DDMC}}"
@@ -2547,7 +2645,14 @@
 										"rest",
 										"v1.0",
 										"tasks",
-										"939086"
+										":task-id"
+									],
+									"variable": [
+										{
+											"key": "task-id",
+											"value": "",
+											"description": "very special task ID"
+										}
 									]
 								},
 								"description": "Get tasks information."
