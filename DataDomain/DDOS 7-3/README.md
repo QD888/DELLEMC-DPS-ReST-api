@@ -14,7 +14,7 @@ https://{{DD-hostname}}/api/doc/web_api.json
 While there are some changes added to the repository like
 {{baseurl}} which you need to change to https and the port as highlighted  
 
-![](images/postman-env-var.jpg)
+![](images/postman-env-var.jpg?raw=true)
 
 When logging into DD make sure you use the right environment and a login does create the auth token
-![](images/postman-login-dd.jpg)
+![](images/postman-login-dd.jpg?raw=true)
