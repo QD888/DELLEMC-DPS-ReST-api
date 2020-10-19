@@ -7,5 +7,3 @@ You will find postman_collection.json and postman_environment.json files which a
       * environment var & postman collection   
      * DDMC 7.3 - configuration template workflow   
       * environment var & postman collection    
-
-  as of today there is no openapi like Rest included so you need to use the attached postman collection.
