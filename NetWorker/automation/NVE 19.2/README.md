@@ -1,4 +1,4 @@
-# DELLEMC-DPS-ReST-api NetWorker NVE automation
+#NetWorker NVE installation with RestAPI - automation
 
 NetWorker configuration of an already deployed ave ova/ovf does mean you have to go through the conig gui
 https://<nve>:7543/avi/avigui.html  
