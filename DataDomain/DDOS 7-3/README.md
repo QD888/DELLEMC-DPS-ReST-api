@@ -20,4 +20,4 @@ When logging into DD make sure you use the right environment and a login does cr
 ![2](https://github.com/juergenschubert/DELLEMC-DPS-ReST-api/blob/master/images/postman-login-dd.png)
 
 This auth token need to be used for all uri call for DD in this example  
-![3](https://github.com/juergenschubert/DELLEMC-DPS-ReST-api/blob/master/postman-xauth-token.png)
+![3](https://github.com/juergenschubert/DELLEMC-DPS-ReST-api/blob/master/images/postman-xauth-token.png)
