@@ -10,3 +10,10 @@ With DDOS 6.1. you also do have a DD ReST test client you can reach @
 https:/{{DD-hostname}}/api/doc/ for playing around.    
 Swagger file for general usage can be found @  
 https://{{DD-hostname}}/api/doc/web_api.json
+
+While there are some changes added to the repository like
+{{baseurl}} which you need to change to https and the port as highlighted  
+![](images/postman-env-var.jpg)
+
+
+![](images/postman-env-var.jpg)
