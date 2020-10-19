@@ -14,7 +14,7 @@ https://{{DD-hostname}}/api/doc/web_api.json
 While there are some changes added to the repository like
 {{baseurl}} which you need to change to https and the port as highlighted  
 
-![](images/postman-env-var.png)
+![1](https://github.com/juergenschubert/DELLEMC-DPS-ReST-api/blob/master/images/postman-env-var.png)
 
 When logging into DD make sure you use the right environment and a login does create the auth token
-![](images/postman-login-dd.png)
+![2](https://github.com/juergenschubert/DELLEMC-DPS-ReST-api/blob/master/images/postman-login-dd.png)
