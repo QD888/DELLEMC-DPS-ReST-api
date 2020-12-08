@@ -9,3 +9,5 @@ If you download individual files make sure you really downloaded the json file a
 # Content
 * DataDomain  
   * DDOS 6.2
+  * DDOS 7.3
+  * DDOS 7.4
